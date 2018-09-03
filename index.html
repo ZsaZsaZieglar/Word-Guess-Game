@@ -16,26 +16,27 @@
 
     <div>
         <h2 class="breedName">update the DOM-the breed name</h2>
+        <!-- If user wins then breedName equals index of the array-->
     </div>
         
     <div>
-        <img class="breedImg"> update the DOM-a dog image with a link to sound />
+        <img class="breedImage"> update the DOM-a dog image with a link to sound />
+        <!-- If user wins then breedImage equals index of the array-->
     </div>
   
     <br />
      
     <!--border around content-->
     <div="content">
-        <p>Press Any Key to Get Started!</p>
+        <h3>Press Any Key to Get Started!</h3>
         <br />
-        <p>WINS: variable</p>
-        <p>Current Word: variable</p>
-        <p>Number of Guesses Remaining: variable</p>
-        <p>Letters Already Guessed: variable</p>
+        <p id = "wins" onclick="winFuction()">WINS:</p> 
+        <p id = "guesses" onclick="guessRemain()">GUESSES REMAIN:</p> 
+        <p id = "lettersGuessed" onclick="alreadyGuessed()">LETTERS GUESSED:</p>     
     </div>
 
     <input type = "text" name = "playerGuess" value = "" 
-     onkeypress = "return oneLetter (event)"/>
+     onkeypress = "return oneLetter(event)"/>
      playerGuess=event.keyCode;
 
 
