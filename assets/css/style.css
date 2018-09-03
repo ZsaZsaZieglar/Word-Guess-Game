@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    text-align:center;
+  }
+
+  body {
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: #777;
+    background-color: #777;
+    width: 960px;
+    font-size: 18px;
+ }
+
+ h1 {
+     color: red;
+ }
