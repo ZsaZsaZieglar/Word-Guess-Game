@@ -45,7 +45,7 @@ var word = [
                     
         }
     }
-  
+  /*
   // Function call to check input of user
   oneLetter();  
 
@@ -68,4 +68,4 @@ var word = [
    {
       document.getElementById("lettersGuessed").innerHTML = answerWord.join(" ");
    }   
-  
+  */
