@@ -25,8 +25,9 @@ var word = [
        lettersGuessed = [];
 
   // Computer selects a random word from the word base and substitue blanks 
-  var pickedLetter = word[Math.floor(Math.random()*word.length)];
-  var pickedLetterArray = pickedLetter.split(""); //["p","o","o","d","l","e"]
+  pickedLetter = word[Math.floor(Math.random()*word.length)];
+  console.log("Picked Letter: "+pickedLetter);
+  pickedLetterArray = pickedLetter.split(""); //["p","o","o","d","l","e"]
 
   pickedLetterPlaceholder = [];
   for (var i = 0; i < pickedLetterArray.length; i++){
