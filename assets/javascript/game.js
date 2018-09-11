@@ -66,7 +66,7 @@ var word = [
             document.getElementById("guessLeft").innerHTML = guessesLeft;
         }
 
-        if(pickedLetterArray.join("") === pickedLetter){
+        if(pickedLetterArray.join("") === pickedLetterPlaceholder.join("")){
             win++;
             document.getElementById("wins").innerHTML = win;
         }
