@@ -14,37 +14,43 @@
         <img src="assets/images/hangman-banner.png" alt="Hangman Logo" height="175" width="900">
     </div>
 
-    
-        <h2 id="breedName">update the DOM-Rottwieler</h2>
+    <div id="breedName">
+        <h2>Guess My Breed</h2>
         <!-- If user wins then breedName equals index of the array to change 
              the breed name by THIS keyword dynamically -->
-    
+    </div>
         
-    <div>
-        <img src id="breedImage">update the DOM-a dog image with a link to sound />
-        <!-- If user wins then breedImage equals index of the array to change
+    <div id="breedImage">
+        <a href="assets/Beethoven - Für Elise.mp3"><img src="assets/images/differentPups.jpg"
+             alt="Different Pups" width="300" height="400" /></a>
+             <p style="color:turquoise;"="clickable">Click Me, You Won!<span id="message"></span></p> 
+        <!-- update the DOM breed image matches breed name
+             If user wins then breedImage equals index of the array to change
              the breed image THIS keyword dynamically -->
     </div>
   
     <br />
      
     <!--border around content-->
-    <div="content">
-        <h3>Press Any Key to Get Started!</h3>
-        <br />
-        <p id = "wins" onclick="winFuction()">WINS:</p> 
-        <p id = "guesses" onclick="guessRemain()">GUESSES REMAIN:</p> 
-        <p id = "lettersGuessed" onclick="alreadyGuessed()">LETTERS GUESSED:</p>     
+    <div class="content">
+            <h3>Press PLAY to Get Started!</h3>
+            <p id="placeholders" style="color: white;"></p>
+            <br />
+            <p style="color: white;">WINS:<span id="wins"></span></p> 
+            <p style="color: white;">LOSSES:<span id="losses"></span></p>
+            <p id="guesses" style="color: white;">GUESSES REMAIN: <span id="guessLeft"></span></p> 
+            <p id="lettersGuessed" style="color: white;">LETTERS GUESSED: <span id="guessed_char"></span></p>    
+            <p id="err_msg" style="color: yellow;"></p>
     </div>
 
-    <input type = "text" name = "playerGuess" value = "" 
-     onkeypress = "return oneLetter(event)"/>
-     playerGuess=event.keyCode;
+    <input type = "submit" name = "playerGuess" value = "PLAY" onclick="play()"/>
+   
 
 
 
 
     
- <!--   <script src="assets/javascript/game.js"></script> -->
+   <script src="assets/javascript/game.js"></script> 
+   <script src="assets/javascript/test.js"></script>
 </body>
 </html>
