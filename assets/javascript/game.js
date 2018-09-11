@@ -68,6 +68,7 @@ var word = [
 
         if(pickedLetterArray.join("") === pickedLetterPlaceholder.join("")){
             win++;
+            console.log("Win: "+win);
             document.getElementById("wins").innerHTML = win;
         }
    }
